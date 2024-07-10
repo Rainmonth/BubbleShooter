@@ -12,7 +12,7 @@ public class MainScript : MonoBehaviour
 
     public static MainScript Instance;
     GameObject ball;
-    Vector2 speed = new Vector2(250, 250); // ÐÇÐÇÃ¿ÃëÒÆ¶¯µÄËÙ¶È         
+    Vector2 speed = new Vector2(250, 250); 
     GameObject PauseDialogLD;
     GameObject OverDialogLD;
     GameObject PauseDialogHD;
@@ -500,7 +500,7 @@ public class MainScript : MonoBehaviour
 
     public void connectNearBallsGlobal()
     {
-        ///Á¬½Ó¸½½üµÄÅÝÅÝ
+        ///ï¿½ï¿½ï¿½Ó¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         fixedBalls = GameObject.FindObjectsOfType(typeof(GameObject)) as GameObject[];
         foreach (GameObject obj in fixedBalls)
         {
@@ -713,7 +713,6 @@ public class MainScript : MonoBehaviour
             curveY.AddKey(0.2f, chicken.transform.position.y - 1);
             float startTime = Time.time;
             Vector3 startPos = chicken.transform.position;
-            float speed = 0.2f;
             float distCovered = 0;
             while (distCovered < 0.6f)
             {
@@ -774,8 +773,6 @@ public class MainScript : MonoBehaviour
         Camera.main.GetComponent<MainScript>().bounceCounter = 0;
         int scoreCounter = 0;
         int rate = 0;
-        int soundPool = 0;
-
         foreach (GameObject obj in b)
         {
             //			obj.GetComponent<OTSprite>().collidable = false;

@@ -1,12 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ButtonX : MonoBehaviour {
+public class ButtonX : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-	
-	}
+    // Use this for initialization
+    void Start()
+    {
+
+    }
 
     void OnMouseDown()
     {
@@ -16,9 +18,10 @@ public class ButtonX : MonoBehaviour {
         }
 
     }
-	
-	// Update is called once per frame
-	void OnPress (bool press) {
+
+    // Update is called once per frame
+    void OnPress(bool press)
+    {
         if (press) return;
- 	}
+    }
 }
